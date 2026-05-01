@@ -52,6 +52,39 @@ Trends API.*
 
 ---
 
+## Dataset Construction
+
+The dataset underpinning this study was built entirely from scratch using two 
+live APIs, requiring substantial ETL work across every stage of collection, 
+alignment, and validation.
+
+### Stock Returns (FactSet API)
+- Continuous weekly OHLC and return data collected for 45 companies across 
+  the US, UK, and India
+- Companies selected through a multi-year FTSE Russell ESG screening process, 
+  requiring 10 consecutive annual snapshots (2016-2025) per firm to filter out 
+  score volatility
+- Trading week end-dates vary by market and holiday calendar. All dates were 
+  backdated to the Sunday opening of each week to align with Google Trends' 
+  Sunday-Saturday convention, eliminating interpolation error
+
+### Google Trends SVI (pytrends / Google Trends API)
+- 124 keywords collected across 6 regions (Australia, India, Singapore, UK, 
+  US, Worldwide), producing 744 SVI series and 740 usable weekly series in total
+- Keywords designed and categorized manually into 6 thematic groups (Economic, 
+  ESG, Global, Industrial, Political, Stock-related), informed by the literature 
+  on search-based investor attention
+- Raw SVI is normalized by Google on a 0-100 scale per query. Weekly change in 
+  SVI was computed to align with the returns (change in price) framing
+
+### Stationarity Enforcement
+- Augmented Dickey-Fuller tests applied to all 785 numeric series (45 return 
+  series and 740 SVI series), with lag length selected automatically by AIC
+- 784 of 785 series were stationary at the 5% level. The single exception was 
+  differenced once and re-tested (ADF p = 0.01)
+
+---
+
 ## Methodology
 
 The analysis follows the CRISP-DM framework and distinguishes pre-registered 
@@ -108,13 +141,14 @@ firms show comparable proportions of successful models.
 ---
 
 ## Repository Structure
+```
 ├── data/
 │   ├── raw/         # Source data (ESG ratings, keywords, SVI, stock returns)
 │   └── results/     # Granger and forecasting output tables
 ├── notebooks/       # Analysis notebook
 ├── reports/         # Thesis PDF
 └── README.md
-
+```
 ---
 
 ## Read the Full Paper
