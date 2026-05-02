@@ -156,7 +156,7 @@ firms show comparable proportions of successful models.
 The complete thesis, including all appendices, figures, and references, is available in
 [Five_Days_of_Fame_Thesis.pdf](https://github.com/M1ck3yJ0/five-days-of-fame/blob/main/reports/Five_Days_of_Fame_Thesis.pdf)
 
-The Jupyter Notebook, with complete code and interactive plotly charts, is available in [Jupyter Notebook](https://colab.research.google.com/drive/1K-Ccuc4_UJX4-G541jvRm3ZZYGU7OMd6?usp=sharing)
+The Jupyter Notebook, with complete code and interactive plotly charts, is available in [Google Colab](https://colab.research.google.com/drive/1K-Ccuc4_UJX4-G541jvRm3ZZYGU7OMd6?usp=sharing)
 
 ---
 
