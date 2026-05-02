@@ -166,6 +166,9 @@ Divergent ESG Profiles.* M.Sc. Business Analytics, Dublin Business School.
 
 ## Acknowledgements
 
+Thesis supervisor: Dr Richard O’Callaghan, Dublin Business School.
+
 Analysis, methodology, and content are the author's own.
+
 ChatGPT (OpenAI) and Claude (Anthropic) were used for assistance with
 debugging code snippets, proofreading report drafts and README drafting.
