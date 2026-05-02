@@ -163,3 +163,9 @@ included in `reports/Five_Days_of_Fame_Thesis.pdf`.
 Joseph, M. M. (2025). *Five Days of Fame: The Half-Life of Google Trends 
 Attention and Its Economic Payoff for Stock Prediction in Companies with 
 Divergent ESG Profiles.* M.Sc. Business Analytics, Dublin Business School.
+
+## Acknowledgements
+
+Analysis, methodology, and content are the author's own.
+ChatGPT (OpenAI) and Claude (Anthropic) were used for assistance with
+debugging code snippets, proofreading report drafts and README drafting.
