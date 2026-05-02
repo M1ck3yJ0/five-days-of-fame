@@ -151,10 +151,12 @@ firms show comparable proportions of successful models.
 ```
 ---
 
-## Read the Full Paper
+## Full Paper & Code
 
 The complete thesis, including all appendices, figures, and references, is available in
 [Five_Days_of_Fame_Thesis.pdf](https://github.com/M1ck3yJ0/five-days-of-fame/blob/main/reports/Five_Days_of_Fame_Thesis.pdf).
+
+[View notebook with interactive charts](https://nbviewer.org/github/M1ck3yJ0/five-days-of-fame/blob/main/notebooks/five_days_of_fame_analysis.ipynb)
 
 ---
 
